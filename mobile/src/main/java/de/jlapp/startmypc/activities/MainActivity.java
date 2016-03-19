@@ -1,4 +1,4 @@
-package jlapp.de.startmypc.activities;
+package de.jlapp.startmypc.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import de.jlapp.shared.MagicPacketAsyncTask;
-import de.jlapp.shared.MagicPacketTuple;
-import jlapp.de.startmypc.R;
+import de.jlapp.startmypc.R;
+import de.jlapp.startmypc.facade.MagicPacketFacade;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,17 +35,13 @@ public class MainActivity extends AppCompatActivity {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String macAddress = getSharedPreferences(getString(R.string.preferences_shared_with_wear), MODE_PRIVATE)
-                        .getString(
-                                getString(R.string.pref_mac_address_key),
-                                getString(R.string.pref_mac_address_summary_default));
-
-                Toast.makeText(MainActivity.this, "Sending MagicPacket to " + macAddress, Toast.LENGTH_SHORT).show();
-
-               MagicPacketAsyncTask.executeNewTask(macAddress, "192.168.178.255");
+                MagicPacketFacade.sendMagicPacket(MainActivity.this);
             }
         });
     }
+
+    private static final String START_ACTIVITY = "/start_activity";
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
