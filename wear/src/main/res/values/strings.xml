@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Start My Pc</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+
+    <string name="start_my_pc">Start it</string>
+
+    <string name="preferences_shared_with_wear" translatable="false">preferences_shared_with_wear</string>
+</resources>
