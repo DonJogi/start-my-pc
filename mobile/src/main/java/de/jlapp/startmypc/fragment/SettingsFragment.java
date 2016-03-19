@@ -1,4 +1,4 @@
-package de.jlapp.startmypc.fragments;
+package de.jlapp.startmypc.fragment;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
