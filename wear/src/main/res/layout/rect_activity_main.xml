@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".activities.MainActivity"
-    tools:deviceIds="wear_square">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_start_my_pc"
-        android:layout_margin="@dimen/diag_button_bottom_padding"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/start_my_pc" />
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".activities.MainActivity"
+        tools:deviceIds="wear_square">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/starting_pc"
+            android:textColor="@color/white" />
+
+        <android.support.wearable.view.DelayedConfirmationView
+            android:id="@+id/delayed_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_white_48dp"
+            app:circle_border_color="@color/white"
+            app:circle_border_width="4dp"
+            app:circle_color="@color/colorPrimary"
+            app:circle_radius="54dp" />
+
+    </LinearLayout>
+</android.support.wearable.view.BoxInsetLayout>

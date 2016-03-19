@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Meinen PC</string>
+
+    <string name="starting_pc">Starte den PC</string>
+    <string name="started_pc">PC gestartet</string>
+    <string name="cancelled">Abgebrochen</string>
+
+</resources>

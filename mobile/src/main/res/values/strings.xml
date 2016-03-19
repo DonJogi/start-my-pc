@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Start My Pc</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name_settings">My PC Settings</string>
+    <string name="app_name_start">My Pc</string>
+
+    <string name="settings_activity_label">Settings</string>
 
     <string name="start_my_pc">Start it</string>
 
-    <string name="settings_activity_label">Settings</string>
 </resources>
