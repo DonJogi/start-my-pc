@@ -2,9 +2,6 @@ package jlapp.de.startmypc;
 
 import wearprefs.WearPrefs;
 
-/**
- * Created by jogi on 19.03.16.
- */
 public class Application extends android.app.Application {
 
     @Override

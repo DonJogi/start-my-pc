@@ -9,6 +9,7 @@
     tools:deviceIds="wear_square">
 
     <Button
+        android:id="@+id/btn_start_my_pc"
         android:layout_margin="@dimen/diag_button_bottom_padding"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -6,9 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
+import de.jlapp.shared.MagicPacketAsyncTask;
+import de.jlapp.shared.MagicPacketTuple;
 import jlapp.de.startmypc.R;
-import jlapp.de.startmypc.activities.SettingsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,14 +22,28 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+        initViews();
+    }
+
+    private void initViews() {
+        View startButton = findViewById(R.id.btn_start_my_pc);
+        if (startButton == null) {
+            return;
+        }
+
+        startButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String macAddress = getSharedPreferences(getString(R.string.preferences_shared_with_wear), MODE_PRIVATE)
+                        .getString(
+                                getString(R.string.pref_mac_address_key),
+                                getString(R.string.pref_mac_address_summary_default));
+
+                Toast.makeText(MainActivity.this, "Sending MagicPacket to " + macAddress, Toast.LENGTH_SHORT).show();
+
+               MagicPacketAsyncTask.executeNewTask(macAddress, "192.168.178.255");
+            }
+        });
     }
 
     @Override
