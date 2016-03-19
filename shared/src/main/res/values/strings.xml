@@ -3,6 +3,11 @@
 
     <string name="preferences_shared_with_wear" translatable="false">preferences_shared_with_wear</string>
     <string name="pref_mac_address_title">MAC Address</string>
+
     <string name="pref_mac_address_key">mac_address</string>
     <string name="pref_mac_address_summary_default">Not set</string>
+
+    <!--<string name="pref_broadcast_ip_title">Broadcast IP</string>-->
+    <!--<string name="pref_broadcast_ip_key">broadcast_ip</string>-->
+    <!--<string name="pref_broadcast_ip_summary_default" translatable="false">192.168.178.255</string>-->
 </resources>

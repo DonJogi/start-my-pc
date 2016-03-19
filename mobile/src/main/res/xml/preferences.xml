@@ -6,4 +6,10 @@
         android:title="@string/pref_mac_address_title"
         android:summary="@string/pref_mac_address_summary_default"
         android:inputType="textUri"/>
+
+    <!--<EditTextPreference-->
+        <!--android:key="@string/pref_broadcast_ip_key"-->
+        <!--android:title="@string/pref_broadcast_ip_title"-->
+        <!--android:summary="@string/pref_broadcast_ip_summary_default"-->
+        <!--android:inputType="textUri"/>-->
 </PreferenceScreen>
