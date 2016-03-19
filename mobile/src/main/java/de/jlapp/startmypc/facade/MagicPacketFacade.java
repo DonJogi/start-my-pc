@@ -4,10 +4,8 @@ import android.content.Context;
 
 import de.jlapp.shared.MagicPacketAsyncTask;
 import de.jlapp.startmypc.R;
+import de.jlapp.startmypc.network.NetworkDetector;
 
-/**
- * Created by jogi on 19.03.2016.
- */
 public class MagicPacketFacade {
 
     public static void sendMagicPacket(Context context) {
@@ -20,7 +18,9 @@ public class MagicPacketFacade {
                         context.getString(R.string.pref_mac_address_key),
                         context.getString(R.string.pref_mac_address_summary_default));
 
+        String broadcastIp = NetworkDetector.getNetworkLocalBroadcastAddressdAsInetAddress();
 
-        MagicPacketAsyncTask.executeNewTask(macAddress, "192.168.178.255");
+
+        MagicPacketAsyncTask.executeNewTask(macAddress, broadcastIp);
     }
 }

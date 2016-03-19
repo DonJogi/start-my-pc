@@ -21,6 +21,7 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
         addPreferencesFromResource(R.xml.preferences);
 
         bindSummaryFor(R.string.pref_mac_address_key, R.string.pref_mac_address_summary_default);
+//        bindSummaryFor(R.string.pref_broadcast_ip_key, R.string.pref_broadcast_ip_summary_default);
     }
 
     @Override
@@ -40,6 +41,9 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
         if (getString(R.string.pref_mac_address_key).equals(key)) {
             bindSummaryFor(R.string.pref_mac_address_key, R.string.pref_mac_address_summary_default);
         }
+//        else if (getString(R.string.pref_broadcast_ip_key).equals(key)) {
+//            bindSummaryFor(R.string.pref_broadcast_ip_key, R.string.pref_broadcast_ip_summary_default);
+//        }
     }
 
     private void bindSummaryFor(int id, int defaultSummary) {
