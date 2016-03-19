@@ -1,4 +1,4 @@
-package jlapp.de.startmypc;
+package de.jlapp.startmypc;
 
 import org.junit.Test;
 

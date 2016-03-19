@@ -1,4 +1,4 @@
-package jlapp.de.startmypc.activities;
+package de.jlapp.startmypc.activities;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -6,7 +6,7 @@ import android.support.v7.app.ActionBar;
 
 import com.example.app.supportv7.app.AppCompatPreferenceActivity;
 
-import jlapp.de.startmypc.fragments.SettingsFragment;
+import de.jlapp.startmypc.fragments.SettingsFragment;
 
 public class SettingsActivity extends AppCompatPreferenceActivity {
 

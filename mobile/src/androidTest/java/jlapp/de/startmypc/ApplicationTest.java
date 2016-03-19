@@ -1,4 +1,4 @@
-package jlapp.de.startmypc;
+package de.jlapp.startmypc;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -1,5 +1,6 @@
-package jlapp.de.startmypc;
+package de.jlapp.startmypc;
 
+import de.jlapp.startmypc.R;
 import wearprefs.WearPrefs;
 
 public class Application extends android.app.Application {

@@ -1,10 +1,11 @@
-package jlapp.de.startmypc.fragments;
+package de.jlapp.startmypc.fragments;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 
-import jlapp.de.startmypc.R;
+import de.jlapp.startmypc.R;
+
 
 public class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
 

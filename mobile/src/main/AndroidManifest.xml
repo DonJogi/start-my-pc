@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="jlapp.de.startmypc">
+    package="de.jlapp.startmypc">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -26,6 +26,19 @@
             android:name=".activities.SettingsActivity"
             android:label="@string/settings_activity_label"
             android:theme="@style/AppTheme"/>
+
+        <service
+            android:name=".service.WearableListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
+
+
 
 </manifest>
