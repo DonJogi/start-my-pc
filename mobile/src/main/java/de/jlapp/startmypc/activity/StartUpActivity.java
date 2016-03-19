@@ -1,4 +1,4 @@
-package de.jlapp.startmypc.activities;
+package de.jlapp.startmypc.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

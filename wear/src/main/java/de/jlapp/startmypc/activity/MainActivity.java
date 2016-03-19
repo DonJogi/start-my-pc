@@ -1,4 +1,4 @@
-package de.jlapp.startmypc.activities;
+package de.jlapp.startmypc.activity;
 
 import android.app.Activity;
 import android.content.Intent;
