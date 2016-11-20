@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name_settings">Meinen PC Settings</string>
-    <string name="app_name_start">Meinen PC</string>
+    <string name="app_name">Starte Meinen PC</string>
+
+    <string name="settings_activity_label">Einstellungen</string>
+    <string name="about_activity_label">Über</string>
+
+    <string name="start_my_pc">Start!</string>
 </resources>

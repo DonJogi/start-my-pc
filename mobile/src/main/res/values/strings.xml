@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name_settings">My PC Settings</string>
-    <string name="app_name_start">My Pc</string>
+    <string name="app_name">Start My PC</string>
 
     <string name="settings_activity_label">Settings</string>
+    <string name="about_activity_label">About</string>
 
     <string name="start_my_pc">Start it</string>
+
+    <string name="copyright" translatable="false">Copyright (2016) Jürgen Landgraf</string>
 
 </resources>
