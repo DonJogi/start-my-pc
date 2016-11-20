@@ -18,9 +18,9 @@ public class MagicPacketFacade {
                         context.getString(R.string.pref_mac_address_key),
                         context.getString(R.string.pref_mac_address_summary_default));
 
-        String broadcastIp = NetworkDetector.getNetworkLocalBroadcastAddressdAsInetAddress();
+        // TODO Find the directed broadcast IP via IP and subnet mask
+        //String broadcastIp = NetworkDetector.getNetworkLocalBroadcastAddressdAsInetAddress();
 
-
-        MagicPacketAsyncTask.executeNewTask(macAddress, broadcastIp);
+        MagicPacketAsyncTask.executeNewTask(macAddress, "255.255.255.255");
     }
 }
