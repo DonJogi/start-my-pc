@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         initViews();
+        setTitle(R.string.app_name);
     }
 
     private void initViews() {

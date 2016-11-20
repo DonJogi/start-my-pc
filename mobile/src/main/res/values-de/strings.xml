@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name_voice">Meinen PC</string>
+    <string name="app_name_settings_voice">Meinen PC Einstellungen</string>
     <string name="app_name">Starte Meinen PC</string>
 
     <string name="settings_activity_label">Einstellungen</string>
